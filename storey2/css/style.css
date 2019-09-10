@@ -95,6 +95,7 @@ a{
 }
 
 .btn,.btn1{
+	cursor: pointer;
 	font-family:  'Lobster', cursive;
 	color: #de87de;
 	background: linear-gradient(#230338 0%, /*#b030b0#c70d3a 50% ,#c70d3a #de87de*/#202060 50%);
@@ -173,7 +174,7 @@ footer{
 	box-shadow: 26em black;
 }
 
-.form input[type=text],.form input[type=password]{
+.form input[type=email],.form input[type=password]{
 	width: 14em;
 	background: none;
 	border: none;
@@ -208,6 +209,62 @@ footer{
 
 a:hover{
 	color: yellow;
+}
+
+/* taken from ws*/
+.showcase1{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin: 3em 10em 3em 10em;
+	height: 40em;
+}
+.showcase-img{
+	
+}
+
+.showcase1 .showcase-part{
+	align-items: center;
+	margin-top: 3em;
+}
+
+.showcase1 .showcase-part h1{
+	text-transform: uppercase;
+	word-spacing: 5px;
+	font-size: 2.5em;
+}
+
+.showcase1 .showcase-part p{
+	text-transform: capitalize;
+	font-size: 1.5em;
+}
+
+.showcase1 .showcase-part .btn{
+	font-family:  'Lobster', cursive;
+	color: #de87de;
+	background: linear-gradient(#230338 0%, /*#b030b0#c70d3a 50% ,#c70d3a #de87de*/#202060 50%);
+	/*background-color: #202040;*/
+	height: 2em;
+	width: 8em;
+	text-align: center; 
+	font-size: 2em;
+	border: none;
+	border-radius: 3em;
+}
+
+.showcase-img img{
+	height: 30em;
+}
+
+/* part-2home*/
+
+.overview2{
+	margin-top: 360px;
+	display: grid;
+	grid-gap: 3em;
+	grid-template-columns: repeat(3,1fr);
+}
+.box3{
+	text-align: center;
 }
 @media(max-width:760px){
 	.overview{
